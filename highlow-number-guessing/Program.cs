@@ -6,7 +6,7 @@ namespace highlow_number_guessing
     {
         public static void Main(string[] args)
         {
-            int maxGuess = 5;
+            const int maxGuess = 5;
             int leftGuess;
             
             Console.WriteLine("Welcome to the High/Low number guessing game");

@@ -42,15 +42,12 @@ namespace highlow_number_guessing
 
                 }
                 Console.WriteLine("number of guesses left: "+maxGuess);
-                
-                if (maxGuess == 0)
-                {
-                    Console.WriteLine("GAME OVER!!! You have no guesses left");
-                    Console.WriteLine($"The random number was {randomNumber}.");
+            }
+            if (maxGuess == 0)
+            {
+                Console.WriteLine("GAME OVER!!! You have no guesses left");
+                Console.WriteLine($"The random number was {randomNumber}.");
 
-                }
-
-       
             }
             
         }

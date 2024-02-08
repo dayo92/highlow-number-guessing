@@ -25,7 +25,6 @@ namespace highlow_number_guessing
                     Console.WriteLine("Please use NUMBERS not LETTERS.");
                     continue;
                 }
-
                 if (playerNumber < randomNumber)
                 {
                     Console.WriteLine("Too low.");
@@ -41,7 +40,7 @@ namespace highlow_number_guessing
                 }
 
                 leftGuess--;
-                Console.WriteLine($"number of guesses left: {maxGuess}");
+                Console.WriteLine($"number of guesses left: {leftGuess}");
             }
             if (leftGuess == 0)
             {

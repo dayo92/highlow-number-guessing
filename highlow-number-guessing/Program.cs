@@ -36,7 +36,8 @@ namespace highlow_number_guessing
                 }
                 if (playerNumber == randomNumber)
                 {
-                    Console.WriteLine("Congratulations! You guessed the secret number.");
+                    Console.WriteLine("Congratulations! You guessed the random number.");
+                    break;
                 }
 
                 leftGuess--;

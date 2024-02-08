@@ -10,15 +10,15 @@ namespace highlow_number_guessing
             const int MIN_GUESS_RANGE= 1;
             const int MAX_GUESS_RANGE= 101;
             
-            int leftGuess;
-            
             Console.WriteLine("Welcome to the High/Low number guessing game");
             Console.WriteLine($"The rules are you have a total of {MAX_GUESSES} guesses to find the correct random number between {MIN_GUESS_RANGE} and {MAX_GUESS_RANGE}.");
             
             Random random = new Random();
             int randomNumber = random.Next(MIN_GUESS_RANGE, MAX_GUESS_RANGE);
             
-            for (leftGuess = MAX_GUESSES; leftGuess > 0;)
+            int leftGuess = MAX_GUESSES;
+            
+            while (leftGuess > 0)
             {
                 Console.Write("Enter your guess: ");
                 string guessedNumber = Console.ReadLine();

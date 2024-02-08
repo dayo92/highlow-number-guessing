@@ -40,7 +40,7 @@ namespace highlow_number_guessing
                 }
 
                 leftGuess--;
-                Console.WriteLine("number of guesses left: " + leftGuess);
+                Console.WriteLine($"number of guesses left: {maxGuess}");
             }
             if (leftGuess == 0)
             {

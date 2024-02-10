@@ -28,14 +28,24 @@ namespace highlow_number_guessing
                     Console.WriteLine("Please use NUMBERS not LETTERS.");
                     continue;
                 }
+                
                 if (playerNumber < randomNumber)
                 {
                     Console.WriteLine("Too low.");
                 }
+                
                 if (playerNumber > randomNumber)
                 {
                     Console.WriteLine("Too high.");
                 }
+                
+                int differenceBetweenNum = Math.Abs(playerNumber - randomNumber);
+                
+                if (differenceBetweenNum <= 10)
+                {
+                    Console.WriteLine("You're close!");
+                }
+                
                 if (playerNumber == randomNumber)
                 {
                     Console.WriteLine("Congratulations! You guessed the random number.");

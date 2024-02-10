@@ -17,6 +17,8 @@ namespace highlow_number_guessing
             int randomNumber = random.Next(MIN_GUESS_RANGE, MAX_GUESS_RANGE);
             
             int leftGuess = MAX_GUESSES;
+
+            bool guessedRight = false;
             
             while (leftGuess > 0)
             {
@@ -31,7 +33,7 @@ namespace highlow_number_guessing
                 
                 if (playerNumber == randomNumber)
                 {
-                    Console.WriteLine("Congratulations! You guessed the random number.");
+                    guessedRight = true;
                     break;
                 }
                 
@@ -56,6 +58,12 @@ namespace highlow_number_guessing
                 leftGuess--;
                 Console.WriteLine($"number of guesses left: {leftGuess}");
             }
+
+            if (guessedRight)
+            {
+                Console.WriteLine("Congratulations! You guessed the random number.");
+            }
+            
             if (leftGuess == 0)
             {
                 Console.WriteLine("GAME OVER!!! You have no guesses left");

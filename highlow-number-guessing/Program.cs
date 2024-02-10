@@ -29,6 +29,12 @@ namespace highlow_number_guessing
                     continue;
                 }
                 
+                if (playerNumber == randomNumber)
+                {
+                    Console.WriteLine("Congratulations! You guessed the random number.");
+                    break;
+                }
+                
                 if (playerNumber < randomNumber)
                 {
                     Console.WriteLine("Too low.");
@@ -46,11 +52,6 @@ namespace highlow_number_guessing
                     Console.WriteLine("You're close!");
                 }
                 
-                if (playerNumber == randomNumber)
-                {
-                    Console.WriteLine("Congratulations! You guessed the random number.");
-                    break;
-                }
 
                 leftGuess--;
                 Console.WriteLine($"number of guesses left: {leftGuess}");
